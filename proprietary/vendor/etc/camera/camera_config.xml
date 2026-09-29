@@ -194,7 +194,7 @@ LensInfo : Information of the lens present in the module.
 -->
     <ModesSupported>1</ModesSupported>
     <Position>BACK_AUX</Position>
-    <MountAngle>270</MountAngle>
+    <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>2</CSIDCore>
       <LaneMask>0x07</LaneMask>
