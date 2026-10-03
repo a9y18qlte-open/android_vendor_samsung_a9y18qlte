@@ -1,4 +1,5 @@
 service BCS-daemon /system/bin/connfwexe
+    oneshot
     class main
     user root
     group system shell radio inet net_raw
