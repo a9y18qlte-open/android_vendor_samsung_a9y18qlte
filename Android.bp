@@ -165,6 +165,27 @@ android_app_import {
 }
 
 android_app_import {
+	name: "EpdgService",
+	owner: "samsung",
+	apk: "proprietary/priv-app/EpdgService/EpdgService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "sveservice",
+	owner: "samsung",
+	apk: "proprietary/app/sveservice/sveservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "HotwordEnrollmentOKGoogleExTL3210",
 	owner: "samsung",
 	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk",

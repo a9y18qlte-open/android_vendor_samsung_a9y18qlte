@@ -41,6 +41,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/epdgmanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/epdgmanager_library.xml \
+    vendor/samsung/a9y18qlte/proprietary/etc/mapconprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/mapconprovider.xml \
+    vendor/samsung/a9y18qlte/proprietary/etc/permissions/privapp-permissions-com.sec.epdg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.epdg.xml \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/rcsopenapi_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/rcsopenapi_library.xml \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/svemanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/svemanager_library.xml \
     vendor/samsung/a9y18qlte/proprietary/etc/permissions/vsimservice_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vsimservice_library.xml \
@@ -113,6 +115,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/lib64/libresampler_ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libresampler_ims.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libSRTP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSRTP.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsec-ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec-ims.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libAudioFWInterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libAudioFWInterface.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libnativecfms.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnativecfms.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libPSI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libPSI.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libRecorder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libRecorder.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/librtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librtp.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/librtppayload.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librtppayload.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libSamsungAPVoiceEngine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSamsungAPVoiceEngine.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libsamsung_videoengine_9_0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsamsung_videoengine_9_0.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libsavscmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsavscmn.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libSTE.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSTE.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libsvejni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsvejni.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libsveservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsveservice.so \
+    vendor/samsung/a9y18qlte/proprietary/lib64/libvad.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvad.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsecaudioeventutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecaudioeventutils.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
@@ -1658,6 +1673,8 @@ PRODUCT_PACKAGES += \
     ImsSettings \
     ImsTelephonyService \
     imsservice \
+    EpdgService \
+    sveservice \
     TimeService \
     com.qti.location.sdk \
     izat.xt.srv \
