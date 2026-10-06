@@ -36,8 +36,8 @@ starts EpdgCompat.startWfcSync(), which copies them over.
 
 EpdgService and its MAPCON provider reload epdg_apns_conf.xml and
 mapconprovider.xml into their databases when Samsung's firmware version
-(ro.build.PDA) changes; compat SemSystemProperties answers it with the build
-time, so that a new ROM build reloads them.
+(ro.build.PDA) changes; compat SemSystemProperties answers it with a checksum
+of the two files, so that they are reloaded whenever they change.
 
 Android 12 changed INetworkManagementEventObserver.interfaceClassDataActivityChanged();
 EpdgNetworkMgmtObserver gets the new signature, which it only logs, like the old one.
