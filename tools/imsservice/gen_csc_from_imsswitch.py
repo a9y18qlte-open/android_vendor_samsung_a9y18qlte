@@ -13,7 +13,9 @@ switches do not depend on the phone's own CSC on /odm.
 - One Setting per carrier with enableIms and enableServiceVolte that the
   imsservice code knows (Mno.smali), matched by plain MCCMNC from mnomap.json;
   MVNOs on the same MCCMNC match their host network's entry.
-- VoLTE on, with IMS PS voice preferred on LTE.
+- VoLTE on. The voice domain preference on LTE is left out, so imsservice
+  takes it from globalsettings.json like newer releases do; they no longer read
+  it from the CSC.
 - VoWiFi on where the table has enableServiceVowifi. Video calls and SMS over
   IMS stay off: untested on this device.
 - Voice/SS/USSD/emergency domains are left out, so imsservice uses its own
@@ -85,7 +87,6 @@ def main(switch_path, mnomap_path, smali_path, output, carrier_config=None, epdg
         ET.SubElement(s, 'EnableVoiceoverWIFI').text = 'true' if mno in vowifi else 'false'
         ET.SubElement(s, 'EnableVideocall').text = 'false'
         ET.SubElement(s, 'EnableSMSoverIP').text = 'false'
-        ET.SubElement(s, 'Voice_Domain_Preference_EUTRAN').text = 'imspsvoicepreferred'
 
     ET.indent(root)
     with open(output, 'wb') as f:
