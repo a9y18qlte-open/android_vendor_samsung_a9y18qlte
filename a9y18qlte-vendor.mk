@@ -1601,7 +1601,6 @@ PRODUCT_PACKAGES += \
     com.qti.location.sdk \
     izat.xt.srv \
     tcmclient \
-    HotwordEnrollmentOKGoogleExTL3210 \
     com.qti.dpmframework \
     dpmapi \
     privapp-permissions-qti \
