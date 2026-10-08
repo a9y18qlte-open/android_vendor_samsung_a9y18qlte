@@ -15,7 +15,8 @@ ImsSmsImplBase backed by GoogleImsService.
   android.telephony.ims.ImsService (binary string pool edit, so everything else
   in the manifest stays byte-identical).
 - ImsSmsImpl calls IImsSmsListener methods that only Android 10 has; they are
-  redirected to SmsListenerCompat. Its direct calls to Android 10 / Samsung
+  redirected to SmsListenerCompat. SmsServiceModule's onReceiveSMSAck calls go
+  there too, so an RP-ERROR from the network is reported as a failure. Its direct calls to Android 10 / Samsung
   framework methods Android 12 lacks go to TelephonyCompat, and bridge/ also
   provides the Samsung TelephonyFeatures and SemCscFeature classes it uses.
 
@@ -44,6 +45,9 @@ REDIRECTS = {
     'onSmsStatusReportReceived(IILjava/lang/String;[B)V':
         'onSmsStatusReportReceived(%sIILjava/lang/String;[B)V' % LISTENER,
 }
+
+ACK_LISTENER = 'Lcom/sec/ims/sms/ISmsServiceEventListener;'
+ACK = 'onReceiveSMSAck(IILjava/lang/String;[BI)V'
 
 STATIC_REDIRECTS = (
     'Lcom/android/internal/telephony/uicc/IccUtils;->getIccType(I)I',
@@ -100,7 +104,19 @@ def redirect_calls(smali_dir):
                           % (re.escape(LISTENER), '|'.join(map(re.escape, REDIRECTS))))
     static = re.compile(r'invoke-static(/range)? (\{[^}]*\}), (%s)'
                         % '|'.join(map(re.escape, STATIC_REDIRECTS)))
+    ack = re.compile(r'invoke-interface(/range)? (\{[^}]*\}), %s->%s'
+                     % (re.escape(ACK_LISTENER), re.escape(ACK)))
     counts = [0, 0]
+    for root, _, files in os.walk(os.path.join(smali_dir, 'com/sec/internal/ims/sms')):
+        for name in files:
+            path = os.path.join(root, name)
+            text = open(path).read()
+            text, n = ack.subn(
+                lambda m: 'invoke-static%s %s, %s->onReceiveSMSAck(%s%s' % (
+                    m.group(1) or '', m.group(2), COMPAT, ACK_LISTENER, ACK.split('(', 1)[1]),
+                text)
+            counts[0] += n
+            open(path, 'w').write(text)
     for root, _, files in os.walk(os.path.join(smali_dir, 'com/google/ims')):
         for name in files:
             path = os.path.join(root, name)

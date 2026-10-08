@@ -86,6 +86,16 @@ public class BridgeSms extends ImsSmsImplBase {
         }
 
         @Override
+        public void onMemoryAvailableResult(int token, int result, int networkErrorCode) {
+            // Android 14. ImsSmsImpl predates it and never calls it.
+            try {
+                BridgeSms.this.onMemoryAvailableResult(token, result, networkErrorCode);
+            } catch (RuntimeException e) {
+                Log.w(TAG, "onMemoryAvailableResult: " + e.getMessage());
+            }
+        }
+
+        @Override
         public void onSmsReceived(int token, String format, byte[] pdu) {
             try {
                 BridgeSms.this.onSmsReceived(token, format, pdu);
