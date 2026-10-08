@@ -201,6 +201,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/hw/vendor.samsung.hardware.tlc.ucm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.tlc.ucm@1.0-service \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.0-service \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.teeregistry@1.0-service \
+    vendor/samsung/a9y18qlte/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/samsung/a9y18qlte/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
@@ -293,6 +294,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service.wahoo.rc \
@@ -1116,6 +1118,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
+    vendor/samsung/a9y18qlte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libxcv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxcv.camera.samsung.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
