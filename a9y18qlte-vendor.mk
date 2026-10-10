@@ -309,6 +309,7 @@ PRODUCT_PACKAGES += \
     libSubSystemShutdown \
     libUBWC \
     lib_SoundAlive_AlbumArt_ver105 \
+    lib_SoundAlive_play_plus_ver210 \
     lib_SoundBooster_ver950 \
     libacdb-fts \
     libacdbloader \
@@ -579,6 +580,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.channel@2.0 \
     vendor.samsung.hardware.radio@2.0 \
     vendor.samsung.hardware.security.proca@2.0 \
+    vendor.samsung.hardware.security.securestorage@3.0 \
     vendor.samsung.hardware.tlc.ucm@1.0-impl \
     vendor.samsung.hardware.tlc.ucm@1.0 \
     android.hardware.camera.provider@2.5-legacy \
@@ -963,7 +965,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
     vendor.samsung.hardware.health@1.0 \
     vendor.samsung.hardware.miscpower@2.0 \
-    vendor.samsung.hardware.security.securestorage@3.0 \
     vendor.samsung.hardware.wifi.hostapd@2.0 \
     vendor.samsung.hardware.wifi.supplicant@2.0 \
     vendor.samsung.hardware.wifi@2.0 \
