@@ -67,28 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/framework/rcsopenapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/rcsopenapi.jar \
     vendor/samsung/a9y18qlte/proprietary/framework/svemanager.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/svemanager.jar \
     vendor/samsung/a9y18qlte/proprietary/framework/vsimmanager.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vsimmanager.jar \
-    vendor/samsung/a9y18qlte/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libfactoryutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfactoryutil.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdf.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libomission_avoidance.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpacm_client.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecaudiocoreutils.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsecaudioeventutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecaudioeventutils.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecure_storage.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsemnativecarrierfeature.so \
-    vendor/samsung/a9y18qlte/proprietary/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libaresdns.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaresdns.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libAudioTranscoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libAudioTranscoder.so \
@@ -99,16 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/lib64/liberis_simaka.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liberis_simaka.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/liberis_strongswan.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liberis_strongswan.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfloatingfeature.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libfactoryutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfactoryutil.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdf.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmparser_lite.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpdecoder.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libomission_avoidance.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpacm_client.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libmediarelayengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmediarelayengine.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libresampler_ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libresampler_ims.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libSRTP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSRTP.so \
@@ -126,11 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsvejni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsvejni.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsveservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsveservice.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libvad.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvad.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecaudiocoreutils.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libsecaudioeventutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecaudioeventutils.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecure_storage.so \
-    vendor/samsung/a9y18qlte/proprietary/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsemnativecarrierfeature.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecril-client.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/libstrongswan.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstrongswan.so \
     vendor/samsung/a9y18qlte/proprietary/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
@@ -144,12 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdiag_system.so \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
-    vendor/samsung/a9y18qlte/proprietary/product/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@1.0.so \
     vendor/samsung/a9y18qlte/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
     vendor/samsung/a9y18qlte/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/samsung/a9y18qlte/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
