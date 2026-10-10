@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.1-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_qsee.rc \
@@ -934,11 +933,9 @@ PRODUCT_PACKAGES += \
     keystore.mdfpp \
     libdsms_vendor \
     libhal.wsm.samsung \
-    libipanat_vendor \
     libkeymaster2_mdfpp \
     libkeymaster_helper_vendor \
     libnlnetmgr \
-    liboffloadhal_vendor \
     libthermalioctl \
     libucsengine \
     libwsmd_functions \
@@ -1039,7 +1036,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.wifi@2.0-service \
     vendor.trustonic.tee@1.0-service \
     vendor.trustonic.teeregistry@1.0-service \
-    ipacm_vendor \
     ipacm-diag \
     irsc_util \
     loc_launcher \

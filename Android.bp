@@ -25664,31 +25664,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libipanat_vendor",
-    stem: "libipanat",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libipanat.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libkeymaster2_mdfpp",
     owner: "samsung",
     strip: {
@@ -25760,42 +25735,6 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liboffloadhal_vendor",
-    stem: "liboffloadhal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liboffloadhal.so",
-            ],
-            shared_libs: [
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "android.hardware.tetheroffload.config@1.0",
-                "android.hardware.tetheroffload.control@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -28100,47 +28039,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ipacm_vendor",
-    stem: "ipacm",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ipacm",
-            ],
-            shared_libs: [
-                "liboffloadhal_vendor",
-                "libipanat_vendor",
-                "libxml2",
-                "libnfnetlink",
-                "libnetfilter_conntrack",
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "android.hardware.tetheroffload.config@1.0",
-                "android.hardware.tetheroffload.control@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
