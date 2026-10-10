@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "device/samsung/a9y18qlte",
+        "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/msm8998",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/dataservices",
@@ -4065,6 +4066,38 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_SoundBooster_ver950",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_SoundBooster_ver950.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_SoundBooster_ver950.so",
+            ],
+            shared_libs: [
+                "liblog",
             ],
         },
     },
@@ -16096,7 +16129,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "vendor.samsung.hardware.tlc.ucm@1.0",
-                "libucm_tlc_tz_esecomm",
                 "libc++",
                 "libc",
                 "libm",
@@ -16113,7 +16145,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "vendor.samsung.hardware.tlc.ucm@1.0",
-                "libucm_tlc_tz_esecomm",
                 "libc++",
                 "libc",
                 "libm",
@@ -26554,7 +26585,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libbinder",
-                "vendor.samsung.frameworks.security.ucm.crypto@1.0",
                 "libhidlbase",
                 "libc++",
                 "libc",

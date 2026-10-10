@@ -308,6 +308,7 @@ PRODUCT_PACKAGES += \
     libStDrvInt \
     libSubSystemShutdown \
     libUBWC \
+    lib_SoundBooster_ver950 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
