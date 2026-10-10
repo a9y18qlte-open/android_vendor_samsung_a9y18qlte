@@ -340,7 +340,6 @@ PRODUCT_PACKAGES += \
     libdisp-aba \
     libdrmfs \
     libdrmtime \
-    libdrmutils_vendor \
     libdsi_netctrl \
     libdsutils \
     libegis_fp_normal_sensor_test \
@@ -359,9 +358,7 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgpu_tonemapper_vendor \
     libgpustats \
-    libgrallocutils_vendor \
     libgsl \
     libhdcp1prov \
     libhdcp2p2prov \
@@ -462,9 +459,7 @@ PRODUCT_PACKAGES += \
     libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
-    libsdmcore_vendor \
     libsdmextension \
-    libsdmutils_vendor \
     libsdsprpc \
     libsec-ril-dsds \
     libsec-ril \
