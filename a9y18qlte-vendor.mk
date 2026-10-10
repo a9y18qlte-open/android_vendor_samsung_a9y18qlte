@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
     libxt_native \
     vendor.samsung.hardware.radio.bridge@2.0 \
     android.hardware.camera.provider@2.4-legacy \
-    com.qualcomm.qti.ant@1.0 \
+    com.qualcomm.qti.ant@1.0_vendor \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.uceservice@2.0 \
     eglSubDriverAndroid \
@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
     libfastcrc \
     libfastcvadsp_stub \
     libfastcvopt \
-    libfloatingfeature \
+    libfloatingfeature_vendor \
     libgarden \
     libgcs-calwrapper \
     libgcs-ipc \
@@ -383,7 +383,7 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
-    libmdf \
+    libmdf_vendor \
     libmdmdetect \
     libmdsprpc \
     libmm-color-convertor \
@@ -457,7 +457,7 @@ PRODUCT_PACKAGES += \
     librs_adreno_sha1 \
     libsaiv_BeautySolutionVideo \
     libsavsac \
-    libsavscmn \
+    libsavscmn_vendor \
     libsavsvc \
     libsdedrm \
     libsdm-color \
@@ -469,10 +469,10 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsec-ril-dsds \
     libsec-ril \
-    libsecaudiocoreutils \
+    libsecaudiocoreutils_vendor \
     libsecaudioinfo \
-    libsecnativefeature \
-    libsecure_storage \
+    libsecnativefeature_vendor \
+    libsecure_storage_vendor \
     libsecureui \
     libsecureui_svcsock \
     libsensor1 \
@@ -556,7 +556,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0 \
     vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.qdutils_disp@1.0 \
@@ -574,7 +574,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.device@4.0 \
     vendor.samsung.hardware.camera.provider@3.0 \
     vendor.samsung.hardware.gnss@2.0 \
-    vendor.samsung.hardware.radio.bridge@2.0 \
+    vendor.samsung.hardware.radio.bridge@2.0_vendor \
     vendor.samsung.hardware.radio.channel@2.0 \
     vendor.samsung.hardware.radio@2.0 \
     vendor.samsung.hardware.security.proca@2.0 \

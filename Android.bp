@@ -1850,7 +1850,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.ant@1.0",
+    name: "com.qualcomm.qti.ant@1.0_vendor",
+    stem: "com.qualcomm.qti.ant@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -5542,7 +5543,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfloatingfeature",
+    name: "libfloatingfeature_vendor",
+    stem: "libfloatingfeature",
     owner: "samsung",
     strip: {
         none: true,
@@ -7259,7 +7261,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmdf",
+    name: "libmdf_vendor",
+    stem: "libmdf",
     owner: "samsung",
     strip: {
         none: true,
@@ -10427,7 +10430,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsavscmn",
+    name: "libsavscmn_vendor",
+    stem: "libsavscmn",
     owner: "samsung",
     strip: {
         none: true,
@@ -11037,7 +11041,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsecaudiocoreutils",
+    name: "libsecaudiocoreutils_vendor",
+    stem: "libsecaudiocoreutils",
     owner: "samsung",
     strip: {
         none: true,
@@ -11119,7 +11124,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsecnativefeature",
+    name: "libsecnativefeature_vendor",
+    stem: "libsecnativefeature",
     owner: "samsung",
     strip: {
         none: true,
@@ -11160,7 +11166,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsecure_storage",
+    name: "libsecure_storage_vendor",
+    stem: "libsecure_storage",
     owner: "samsung",
     strip: {
         none: true,
@@ -14894,7 +14901,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0",
+    name: "vendor.qti.hardware.fm@1.0_vendor",
+    stem: "vendor.qti.hardware.fm@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -15834,7 +15842,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio.bridge@2.0",
+    name: "vendor.samsung.hardware.radio.bridge@2.0_vendor",
+    stem: "vendor.samsung.hardware.radio.bridge@2.0",
     owner: "samsung",
     strip: {
         none: true,
