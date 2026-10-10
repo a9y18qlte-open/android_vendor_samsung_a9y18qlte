@@ -4075,6 +4075,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib_SoundAlive_AlbumArt_ver105",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib_SoundBooster_ver950",
     owner: "samsung",
     strip: {
@@ -27417,69 +27452,6 @@ cc_prebuilt_library_shared {
     product_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.qti.data.factory@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/product/lib/vendor.qti.data.factory@1.0.so",
-            ],
-            shared_libs: [
-                "com.quicinc.cne.api@1.0",
-                "com.quicinc.cne.api@1.1",
-                "com.quicinc.cne.constants@2.1",
-                "com.quicinc.cne.server@2.0",
-                "com.quicinc.cne.server@2.1",
-                "com.quicinc.cne.server@2.2",
-                "vendor.qti.hardware.data.dynamicdds@1.0",
-                "vendor.qti.hardware.data.qmi@1.0",
-                "vendor.qti.ims.rcsconfig@1.0",
-                "vendor.qti.latency@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/product/lib64/vendor.qti.data.factory@1.0.so",
-            ],
-            shared_libs: [
-                "com.quicinc.cne.api@1.0",
-                "com.quicinc.cne.api@1.1",
-                "com.quicinc.cne.constants@2.1",
-                "com.quicinc.cne.server@2.0",
-                "com.quicinc.cne.server@2.1",
-                "com.quicinc.cne.server@2.2",
-                "vendor.qti.hardware.data.dynamicdds@1.0",
-                "vendor.qti.hardware.data.qmi@1.0",
-                "vendor.qti.ims.rcsconfig@1.0",
-                "vendor.qti.latency@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    product_specific: true,
-}
-
 android_app_import {
     name: "ImsSettings",
     owner: "samsung",
@@ -27684,33 +27656,6 @@ dex_import {
     owner: "samsung",
     jars: [
         "proprietary/product/framework/dpmapi.jar",
-    ],
-    product_specific: true,
-}
-
-dex_import {
-    name: "vendor.qti.data.factory-V1.0-java",
-    owner: "samsung",
-    jars: [
-        "proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar",
-    ],
-    product_specific: true,
-}
-
-dex_import {
-    name: "vendor.qti.data.factory-V2.0-java",
-    owner: "samsung",
-    jars: [
-        "proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar",
-    ],
-    product_specific: true,
-}
-
-dex_import {
-    name: "vendor.qti.data.factory-V2.1-java",
-    owner: "samsung",
-    jars: [
-        "proprietary/product/framework/vendor.qti.data.factory-V2.1-java.jar",
     ],
     product_specific: true,
 }

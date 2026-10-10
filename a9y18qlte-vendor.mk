@@ -308,6 +308,7 @@ PRODUCT_PACKAGES += \
     libStDrvInt \
     libSubSystemShutdown \
     libUBWC \
+    lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundBooster_ver950 \
     libacdb-fts \
     libacdbloader \
@@ -987,7 +988,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice@2.1 \
     com.qualcomm.qti.imscmservice@2.2 \
     libdiag_system \
-    vendor.qti.data.factory@1.0 \
     ImsSettings \
     sveservice \
     EpdgService \
@@ -1011,9 +1011,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
     dpmapi \
-    vendor.qti.data.factory-V1.0-java \
-    vendor.qti.data.factory-V2.0-java \
-    vendor.qti.data.factory-V2.1-java \
     privapp-permissions-qti.xml \
     qti_whitelist.xml \
     libnfc-nci.conf \
