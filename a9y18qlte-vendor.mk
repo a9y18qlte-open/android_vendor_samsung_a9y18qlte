@@ -540,14 +540,9 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.ssc \
     libasphere \
-    libaudioeffectoffload \
-    libqcbassboost \
     libqcompostprocbundle_vendor \
     libqcomvisualizer_vendor \
     libqcomvoiceprocessing_vendor \
-    libqcreverb \
-    libqcvirt \
-    libswdap \
     libvolumelistener_vendor \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -598,10 +593,7 @@ PRODUCT_PACKAGES += \
     libHMT \
     lib_SamsungRec_06005 \
     lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
-    lib_SoundAlive_play_plus_ver210 \
-    lib_SoundBooster_ver950 \
     lib_soundaliveresampler \
     libactuator_dw9808 \
     libactuator_dw9808_sub \
@@ -944,12 +936,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal \
     libwvhidl \
     libwvdrmengine \
-    libaudiosaplus_sec \
-    libgearvr \
-    libmysound \
-    libmyspace \
-    libplaybackrecorder \
-    libsamsungSoundbooster_plus \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.samsung.camera.device@1.0-impl \
     vendor.samsung.camera.device@4.0-impl \
@@ -1001,6 +987,8 @@ PRODUCT_PACKAGES += \
     ImsSettings \
     sveservice \
     EpdgService \
+    HotwordEnrollmentOKGoogleExTL3210 \
+    HotwordEnrollmentXGoogleExTL3210 \
     ImsTelephonyService \
     imsservice \
     TimeService \
@@ -1074,7 +1062,6 @@ PRODUCT_PACKAGES += \
     qrtr-ns \
     qseecomd \
     rmt_storage \
-    secril_config_svc_vendor \
     secure_storage_daemon \
     sensors.qti \
     ssr_diag \
