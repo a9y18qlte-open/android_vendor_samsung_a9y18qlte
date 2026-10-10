@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "hardware/samsung",
         "device/samsung/a9y18qlte",
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/msm8998",
@@ -9694,7 +9695,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "vendor.samsung.hardware.radio@2.0_vendor",
+                "vendor.samsung.hardware.radio@2.0",
                 "vendor.samsung.hardware.radio.bridge@2.0_vendor",
                 "libc++",
                 "libc",
@@ -9724,7 +9725,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "vendor.samsung.hardware.radio@2.0_vendor",
+                "vendor.samsung.hardware.radio@2.0",
                 "vendor.samsung.hardware.radio.bridge@2.0_vendor",
                 "libc++",
                 "libc",
@@ -15158,64 +15159,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio@2.0_vendor",
-    stem: "vendor.samsung.hardware.radio@2.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.3",
-                "android.hardware.radio@1.4",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.3",
-                "android.hardware.radio@1.4",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",

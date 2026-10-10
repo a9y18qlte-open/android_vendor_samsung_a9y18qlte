@@ -563,7 +563,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0_vendor \
     vendor.samsung.hardware.radio.channel@2.0 \
-    vendor.samsung.hardware.radio@2.0_vendor \
     vendor.samsung.hardware.security.proca@2.0 \
     vendor.samsung.hardware.security.securestorage@3.0_vendor \
     vendor.samsung.hardware.tlc.ucm@1.0-impl \
