@@ -11332,6 +11332,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libseemore",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libseemore.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libz",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libseemore.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libz",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsensor1",
     owner: "samsung",
     strip: {

@@ -473,6 +473,7 @@ PRODUCT_PACKAGES += \
     libsecure_storage_vendor \
     libsecureui \
     libsecureui_svcsock \
+    libseemore \
     libsensor1 \
     libsensor_reg \
     libsensorlistener \
