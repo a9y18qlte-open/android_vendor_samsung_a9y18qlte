@@ -535,10 +535,6 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.ssc \
     libasphere \
-    libqcompostprocbundle_vendor \
-    libqcomvisualizer_vendor \
-    libqcomvoiceprocessing_vendor \
-    libvolumelistener_vendor \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.postproc@1.0 \
