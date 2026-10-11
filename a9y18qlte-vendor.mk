@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
@@ -557,9 +556,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
-    vendor.samsung.hardware.camera.device@1.0 \
-    vendor.samsung.hardware.camera.device@4.0 \
-    vendor.samsung.hardware.camera.provider@3.0 \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio.bridge@2.0_vendor \
     vendor.samsung.hardware.radio.channel@2.0 \
@@ -567,18 +563,10 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.securestorage@3.0_vendor \
     vendor.samsung.hardware.tlc.ucm@1.0-impl \
     vendor.samsung.hardware.tlc.ucm@1.0 \
-    android.hardware.camera.provider@2.4-legacy_vendor \
-    android.hardware.camera.provider@2.5-legacy_vendor \
-    camera.device@1.0-impl_vendor \
-    camera.device@3.2-impl_vendor \
-    camera.device@3.3-impl_vendor \
-    camera.device@3.4-impl_vendor \
-    camera.device@3.5-impl_vendor \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     audio.primary.sdm660_vendor \
     camera.sdm660 \
     sound_trigger.primary.sdm660 \
-    vendor.samsung.hardware.camera.provider@3.0-impl \
     libHMT \
     lib_SamsungRec_06005 \
     lib_SoundAlive_3DPosition_ver202 \
@@ -926,8 +914,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     vendor.qti.hardware.audiohalext@1.0 \
-    vendor.samsung.camera.device@1.0-impl \
-    vendor.samsung.camera.device@4.0-impl \
     gatekeeper.mdfpp \
     keystore.mdfpp \
     libdsms_vendor \
@@ -1029,7 +1015,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
-    vendor.samsung.hardware.camera.provider@3.0-service \
     vendor.samsung.hardware.miscpower@2.0-service \
     vendor.samsung.hardware.tlc.ucm@1.0-service \
     vendor.samsung.hardware.wifi@2.0-service \
