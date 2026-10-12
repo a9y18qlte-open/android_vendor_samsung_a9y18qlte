@@ -537,6 +537,20 @@ special_mode_mask values:
       <A3Video>imx576_e24qs_hfr_120_3a</A3Video>
       <PostProc>imx576_e24qs_sw_post_proc_tetra</PostProc>
     </ChromatixName>
+    <!--240 fps without the Samsung SLOW_MOTION special mode-->
+    <ChromatixName sensor_resolution_index="5">
+      <ISPCommon>imx576_e24qs_common</ISPCommon>
+      <ISPPreview>imx576_e24qs_snapshot_isp</ISPPreview>
+      <ISPSnapshot>imx576_e24qs_snapshot_isp</ISPSnapshot>
+      <ISPVideo>imx576_e24qs_video_isp</ISPVideo>
+      <CPPPreview>imx576_e24qs_preview_cpp</CPPPreview>
+      <CPPSnapshot>imx576_e24qs_snapshot_cpp</CPPSnapshot>
+      <CPPVideo>imx576_e24qs_video_cpp</CPPVideo>
+      <CPPLiveshot>imx576_e24qs_liveshot_cpp</CPPLiveshot>
+      <A3Preview>imx576_e24qs_mode_slowmotion_3a</A3Preview>
+      <A3Video>imx576_e24qs_mode_slowmotion_3a</A3Video>
+      <PostProc>imx576_e24qs_sw_post_proc_tetra</PostProc>
+    </ChromatixName>
     <!--SlowMotion-->
     <ChromatixName sensor_resolution_index="5" special_mode_mask="SLOW_MOTION,DIM_720P">
       <ISPCommon>imx576_e24qs_common</ISPCommon>
