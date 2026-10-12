@@ -560,7 +560,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.ucm@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     audio.primary.sdm660_vendor \
-    camera.sdm660 \
     sound_trigger.primary.sdm660 \
     libHMT \
     lib_SamsungRec_06005 \
@@ -753,7 +752,6 @@ PRODUCT_PACKAGES += \
     libdrc \
     libdsd2pcm \
     libflash_pmic \
-    libhal_dbg \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
@@ -791,7 +789,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_imx258_mono_gt24c32_eeprom \
     libmmcamera_imx576 \
     libmmcamera_imx576_front \
-    libmmcamera_interface \
     libmmcamera_isp_abf48 \
     libmmcamera_isp_aec_bg_stats47 \
     libmmcamera_isp_bf_stats47 \
@@ -885,13 +882,11 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning_lookup \
     libmmcamera_videobeauty \
     libmmjpeg \
-    libmmjpeg_interface \
     libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libois_bu63165 \
     libois_lc898122 \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
