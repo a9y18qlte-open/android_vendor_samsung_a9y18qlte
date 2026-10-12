@@ -100,7 +100,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.1-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_qsee.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/secure_storage_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_storage_daemon_qsee.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -120,11 +119,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/wsm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wsm-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/media_codecs_ac4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_ac4.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/media_codecs_ddp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_ddp.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
@@ -197,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/msadp:$(TARGET_COPY_OUT_VENDOR)/firmware/msadp \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/nfc/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libpn553_fw.so \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
@@ -911,11 +907,10 @@ PRODUCT_PACKAGES += \
     libkeymaster2_mdfpp \
     libkeymaster_helper_vendor \
     libnlnetmgr \
+    libpn553_fw \
     libthermalioctl \
     libucsengine \
     libwsmd_functions \
-    nfc_nci_nxp \
-    vendor.nxp.nxpnfc@1.1 \
     vendor.qti.gnss@3.0-service \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.samsung.frameworks.security.dsms@1.0_vendor \
@@ -998,7 +993,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.1-service.wahoo \
     macloader \
     mfgloader \
-    nxp.android.hardware.nfc@1.1-service \
     rild \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.perf@2.0-service \

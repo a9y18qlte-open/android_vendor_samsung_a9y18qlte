@@ -24918,6 +24918,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpn553_fw",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpn553_fw.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libthermalioctl",
     owner: "samsung",
     strip: {
@@ -24988,72 +25006,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libQSEEComAPI",
                 "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "nfc_nci_nxp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/nfc_nci_nxp.so",
-            ],
-            shared_libs: [
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfc@1.1",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.nxp.nxpnfc@1.0",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -26735,45 +26687,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "nxp.android.hardware.nfc@1.1-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.1-service",
-            ],
-            shared_libs: [
-                "nfc_nci_nxp",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libutils",
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "vendor.nxp.nxpnfc@1.0",
-                "vendor.nxp.nxpnfc@1.1",
                 "libc++",
                 "libc",
                 "libm",
