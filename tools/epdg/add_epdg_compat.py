@@ -42,6 +42,12 @@ of the two files, so that they are reloaded whenever they change.
 Android 12 changed INetworkManagementEventObserver.interfaceClassDataActivityChanged();
 EpdgNetworkMgmtObserver gets the new signature, which it only logs, like the old one.
 
+The IKE configuration gives the tunnel an IPv4 address without a netmask, so the
+data call reported it with prefix length 0. Tethering takes such an address as
+0.0.0.0/0 in use and finds no free downstream prefix, so hotspot and USB
+tethering failed while Wi-Fi Calling was up. A tunnel address without a netmask
+is a host address: IWlanLinkProperties.getIpv4prefixlen() answers 0 as 32.
+
 Build the compat smali with compat/build.sh and baksmali its classes.dex.
 """
 
@@ -81,6 +87,18 @@ TUN_IFACE = ('Lcom/sec/epdg/interfaceController/EpdgInterface;->getTunInterface'
 
 # (smali file, method, regex within the method, replacement)
 PATCHES = [
+    (
+        'com/sec/epdg/EpdgRilInterface$IWlanLinkProperties.smali',
+        '.method public getIpv4prefixlen()I',
+        r'(iget v0, p0, Lcom/sec/epdg/EpdgRilInterface\$IWlanLinkProperties;->mIpv4PrefixLen:I\n)',
+        r'''\1
+    if-nez v0, :ipv4_prefixlen_ok
+
+    const/16 v0, 0x20
+
+    :ipv4_prefixlen_ok
+''',
+    ),
     (
         'com/sec/epdg/EpdgService.smali',
         '.method public onCreate()V',
