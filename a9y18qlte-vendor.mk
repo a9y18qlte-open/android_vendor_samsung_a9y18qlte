@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
     libSubSystemShutdown \
     libUBWC \
     libVkLayer_q3dtools \
+    lib_SoundBooster_ver950 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -519,6 +520,8 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.ssc \
     libasphere \
+    libsamsungSoundbooster_plus \
+    libswdap \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
