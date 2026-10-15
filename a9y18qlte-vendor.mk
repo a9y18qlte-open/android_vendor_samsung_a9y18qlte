@@ -263,7 +263,6 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
     activity_recognition.sdm660 \
@@ -273,15 +272,13 @@ PRODUCT_PACKAGES += \
     audio.sec_primary.default \
     com.qualcomm.qti.ant@1.0-impl \
     fingerprint.default \
-    gralloc.sdm660_vendor \
-    hwcomposer.sdm660 \
     memtrack.sdm660 \
     power.qcom \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.iop@2.0-impl \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
-    vulkan.sdm660 \
+    vulkan.adreno \
     libAlacSwDec \
     libApeSwDec \
     libC2D2 \
@@ -296,11 +293,11 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libOpenCv.camera.samsung \
     libQSEEComAPI \
-    libRSDriver_adreno \
     libSecureUILib \
     libStDrvInt \
     libSubSystemShutdown \
     libUBWC \
+    libVkLayer_q3dtools \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -316,7 +313,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbauthserver \
     libbauthtzcommon \
-    libbccQTI \
     libbt-hidlclient \
     libc2d30_bltlib \
     libcdsp_default_listener \
@@ -347,7 +343,7 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgpustats \
+    libgpudataproducer \
     libgsl \
     libhdcp1prov \
     libhdcp2p2prov \
@@ -439,7 +435,6 @@ PRODUCT_PACKAGES += \
     librmp \
     librpmb \
     librs_adreno \
-    librs_adreno_sha1 \
     libsaiv_BeautySolutionVideo \
     libsavsac \
     libsavscmn_vendor \
@@ -526,6 +521,7 @@ PRODUCT_PACKAGES += \
     libasphere \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
