@@ -273,8 +273,6 @@ PRODUCT_PACKAGES += \
     audio.sec_primary.default \
     com.qualcomm.qti.ant@1.0-impl \
     fingerprint.default \
-    gralloc.sdm660_vendor \
-    hwcomposer.sdm660 \
     memtrack.sdm660 \
     power.qcom \
     vendor.qti.gnss@3.0-impl \
