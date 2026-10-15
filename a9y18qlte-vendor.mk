@@ -269,7 +269,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     audio.sec_primary.default \
     com.qualcomm.qti.ant@1.0-impl \
-    memtrack.sdm660 \
     power.qcom \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
