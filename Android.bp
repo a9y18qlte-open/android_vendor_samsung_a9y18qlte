@@ -2600,46 +2600,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.default",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/fingerprint.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbauthserver",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbauthserver",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "power.qcom",
     owner: "samsung",
     strip: {
@@ -25096,37 +25056,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.biometrics.fingerprint@3.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.biometrics.fingerprint@2.1",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.health@1.0",
     owner: "samsung",
     strip: {
@@ -26805,39 +26734,6 @@ cc_prebuilt_binary {
                 "libhidltransport",
                 "libbinder",
                 "vendor.qti.hardware.tui_comm@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.biometrics.fingerprint@3.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libhardware",
-                "libutils",
-                "android.hardware.biometrics.fingerprint@2.1",
-                "vendor.samsung.hardware.biometrics.fingerprint@3.0",
                 "libc++",
                 "libc",
                 "libm",

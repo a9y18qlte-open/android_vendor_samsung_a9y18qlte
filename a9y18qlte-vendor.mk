@@ -109,7 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
@@ -272,7 +271,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     audio.sec_primary.default \
     com.qualcomm.qti.ant@1.0-impl \
-    fingerprint.default \
     power.qcom \
     vendor.qti.gnss@3.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
@@ -915,7 +913,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.samsung.frameworks.security.dsms@1.0_vendor \
     vendor.samsung.frameworks.security.ucm.crypto@1.0 \
-    vendor.samsung.hardware.biometrics.fingerprint@3.0 \
     vendor.samsung.hardware.health@1.0 \
     vendor.samsung.hardware.miscpower@2.0 \
     vendor.samsung.hardware.wifi.hostapd@2.0 \
@@ -998,7 +995,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0-service \
     vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.miscpower@2.0-service \
     vendor.samsung.hardware.tlc.ucm@1.0-service \
     vendor.samsung.hardware.wifi@2.0-service \
