@@ -508,7 +508,6 @@ PRODUCT_PACKAGES += \
     libvdis_interface \
     libvideobeauty_interface \
     libvideoutils \
-    libvkmanager_vendor \
     libvndsecril-client \
     libvpphvx \
     libvpplibrary \
