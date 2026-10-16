@@ -564,6 +564,8 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libaudio_soundtrigger \
     libchromatix_imx576_d24qs_3rd_preview_high_cpp \
+    libchromatix_imx576_d24qs_60_preview_3a \
+    libchromatix_imx576_d24qs_60_video_3a \
     libchromatix_imx576_d24qs_common \
     libchromatix_imx576_d24qs_default_video_3a \
     libchromatix_imx576_d24qs_hfr_120_3a \
@@ -620,6 +622,8 @@ PRODUCT_PACKAGES += \
     libchromatix_imx576_e24qs_3rd_preview_high_isp \
     libchromatix_imx576_e24qs_4k_preview_3a \
     libchromatix_imx576_e24qs_4k_video_3a \
+    libchromatix_imx576_e24qs_60_preview_3a \
+    libchromatix_imx576_e24qs_60_video_3a \
     libchromatix_imx576_e24qs_common \
     libchromatix_imx576_e24qs_hfr_120_3a \
     libchromatix_imx576_e24qs_hfr_120_cpp \
@@ -662,6 +666,7 @@ PRODUCT_PACKAGES += \
     libchromatix_imx576_e24qs_snapshot_remosaic_isp \
     libchromatix_imx576_e24qs_sw_post_proc_remosaic \
     libchromatix_imx576_e24qs_sw_post_proc_tetra \
+    libchromatix_imx576_e24qs_uhd_video_3a \
     libchromatix_imx576_e24qs_video_4k_cpp \
     libchromatix_imx576_e24qs_video_cpp \
     libchromatix_imx576_e24qs_video_hd_isp \
