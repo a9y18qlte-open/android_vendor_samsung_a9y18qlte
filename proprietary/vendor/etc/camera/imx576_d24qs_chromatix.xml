@@ -169,6 +169,18 @@ special_mode_mask values:
       <A3Preview>imx576_d24qs_zsl_preview_3a</A3Preview>
       <A3Video>imx576_d24qs_default_video_3a</A3Video>
       </ChromatixName>
+    <!--240 fps: no front slow motion 3A, use the rear IMX576 one-->
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="PREVIEW_FRONT_DIM_HIGH,SNAPSHOT_FRONT_DIM_HIGH,VIDEO_FRONT_DIM_HIGH">
+      <ISPPreview>imx576_d24qs_preview_high_isp</ISPPreview>
+      <CPPPreview>imx576_d24qs_preview_high_cpp</CPPPreview>
+      <ISPSnapshot>imx576_d24qs_snapshot_high_isp</ISPSnapshot>
+      <CPPSnapshot>imx576_d24qs_snapshot_high_cpp</CPPSnapshot>
+      <ISPVideo>imx576_d24qs_video_high_isp</ISPVideo>
+      <CPPVideo>imx576_d24qs_video_high_cpp</CPPVideo>
+      <CPPLiveshot>imx576_d24qs_liveshot_cpp</CPPLiveshot>
+      <A3Preview>imx576_e24qs_mode_slowmotion_3a</A3Preview>
+      <A3Video>imx576_e24qs_mode_slowmotion_3a</A3Video>
+    </ChromatixName>
     <ChromatixName special_mode_mask="PREVIEW_FRONT_DIM_HIGH,SNAPSHOT_FRONT_DIM_HIGH,VIDEO_FRONT_DIM_HIGH">
       <ISPPreview>imx576_d24qs_preview_high_isp</ISPPreview>
       <CPPPreview>imx576_d24qs_preview_high_cpp</CPPPreview>
