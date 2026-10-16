@@ -666,7 +666,6 @@ PRODUCT_PACKAGES += \
     libchromatix_imx576_e24qs_snapshot_remosaic_isp \
     libchromatix_imx576_e24qs_sw_post_proc_remosaic \
     libchromatix_imx576_e24qs_sw_post_proc_tetra \
-    libchromatix_imx576_e24qs_uhd_video_3a \
     libchromatix_imx576_e24qs_video_4k_cpp \
     libchromatix_imx576_e24qs_video_cpp \
     libchromatix_imx576_e24qs_video_hd_isp \

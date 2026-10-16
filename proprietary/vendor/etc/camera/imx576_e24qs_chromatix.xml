@@ -440,8 +440,8 @@ special_mode_mask values:
       <CPPPreview>imx576_e24qs_video_4k_cpp</CPPPreview>
       <CPPSnapshot>imx576_e24qs_video_4k_cpp</CPPSnapshot>
       <CPPVideo>imx576_e24qs_video_4k_cpp</CPPVideo>
-      <A3Preview>imx576_e24qs_uhd_video_3a</A3Preview>
-      <A3Video>imx576_e24qs_uhd_video_3a</A3Video>
+      <A3Preview>imx576_e24qs_zsl_video_3a</A3Preview>
+      <A3Video>imx576_e24qs_zsl_video_3a</A3Video>
       <PostProc>imx576_e24qs_sw_post_proc_tetra</PostProc>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1" special_mode_mask="EFFECT_VIDEO_RECORDING">
