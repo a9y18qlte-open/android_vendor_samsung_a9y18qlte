@@ -743,6 +743,7 @@ PRODUCT_PACKAGES += \
     libdepthmapwrapper \
     libdrc \
     libdsd2pcm \
+    libdualcam_refocus \
     libflash_pmic \
     libjpegdhw \
     libjpegdmahw \
@@ -877,6 +878,7 @@ PRODUCT_PACKAGES += \
     libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
+    libmpbase \
     libois_bu63165 \
     libois_lc898122 \
     libqomx_jpegdec \
