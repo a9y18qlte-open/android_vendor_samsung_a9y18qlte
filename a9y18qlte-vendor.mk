@@ -519,7 +519,6 @@ PRODUCT_PACKAGES += \
     libswdap \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
