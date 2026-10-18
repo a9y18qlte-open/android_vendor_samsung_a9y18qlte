@@ -10,6 +10,7 @@ soong_namespace {
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/sdm660",
         "hardware/qcom-caf/wlan",
+        "vendor/qcom/opensource/dataservices",
         "vendor/qcom/opensource/display",
     ],
 }
@@ -7830,7 +7831,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libnetmgr",
                 "libnetmgr_common",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libc++",
                 "libc",
                 "libm",
@@ -7849,7 +7850,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libnetmgr",
                 "libnetmgr_common",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libc++",
                 "libc",
                 "libm",
@@ -9535,42 +9536,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "librmnetctl_vendor",
-    stem: "librmnetctl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librmnetctl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librmnetctl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "librmp",
     owner: "samsung",
     strip: {
@@ -10136,7 +10101,7 @@ cc_prebuilt_library_shared {
                 "libtime_genoff",
                 "libmdmdetect",
                 "libdsutils",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libperipheral_client",
                 "libconfigdb",
                 "libsecnativefeature_vendor",
@@ -10181,7 +10146,7 @@ cc_prebuilt_library_shared {
                 "libtime_genoff",
                 "libmdmdetect",
                 "libdsutils",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libperipheral_client",
                 "libconfigdb",
                 "libsecnativefeature_vendor",
@@ -10239,7 +10204,7 @@ cc_prebuilt_library_shared {
                 "libtime_genoff",
                 "libmdmdetect",
                 "libdsutils",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libperipheral_client",
                 "libconfigdb",
                 "libsecnativefeature_vendor",
@@ -10284,7 +10249,7 @@ cc_prebuilt_library_shared {
                 "libtime_genoff",
                 "libmdmdetect",
                 "libdsutils",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libperipheral_client",
                 "libconfigdb",
                 "libsecnativefeature_vendor",
@@ -26075,7 +26040,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "liblog",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libqmi_cci",
                 "libdsutils",
                 "libdiag",
@@ -27054,7 +27019,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libnetutils",
-                "librmnetctl_vendor",
+                "librmnetctl",
                 "libnlnetmgr",
                 "libnetmgr",
                 "libnetmgr_common",

@@ -428,7 +428,6 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libril \
     librilutils \
-    librmnetctl_vendor \
     librmp \
     librpmb \
     librs_adreno \
