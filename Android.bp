@@ -14990,7 +14990,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "audio.primary.sdm660_vendor",
-    stem: "audio.primary.sdm660",
+    stem: "audio.primary.sdm660-a9y18qlte",
     owner: "samsung",
     strip: {
         none: true,
@@ -14998,7 +14998,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.sdm660.so",
+                "proprietary/vendor/lib/hw/audio.primary.sdm660-a9y18qlte.so",
             ],
             shared_libs: [
                 "libbase",
