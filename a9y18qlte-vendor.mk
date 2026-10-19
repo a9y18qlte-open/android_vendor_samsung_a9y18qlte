@@ -514,7 +514,6 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.ssc \
     libasphere \
-    libsamsungSoundbooster_plus \
     libswdap \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
