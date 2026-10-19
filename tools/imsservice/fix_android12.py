@@ -16,6 +16,17 @@ imsservice.apk - ImsConfigImpl.setFeatureValue() only logs and never answers the
   listener. Android 12's MmTelFeatureCompatAdapter waits up to 2s for that
   answer on com.android.phone's main thread for every capability change, which
   ANRs the phone process in a loop. Report success to the listener.
+
+imsservice.apk - ResipRegistrationManager.registerInternal throws RuntimeException
+  ("UA is not deleted..") in userdebug mode (ro.debuggable=1). Always take the
+  user recovery path (EVENT_DELETE_UA) to avoid an infinite 30s crash loop.
+
+imsservice.apk - SimManager.isSimAvailable() returned true as soon as the SIM
+  state reached LOADED, ignoring whether ISIM was loaded. On SIMs with an ISIM
+  app, this fired notifySimReady() prematurely before ISIM credentials were
+  read, followed by a second notifySimReady() when ISIM loaded, racing two PDN
+  setups and leaving the first UA undeleted. Require mIsimLoaded when hasIsim()
+  is true.
 """
 
 import os
@@ -65,6 +76,64 @@ FIXES = [
     :set_feature_no_listener
     return-void
 """,
+    ),
+    (
+        'com/sec/internal/ims/imsservice/ResipRegistrationManager.smali',
+        ':cond_9',
+        """    invoke-static {}, Lcom/sec/internal/ims/util/IMSLog;->isEngMode()Z
+
+    move-result v0
+
+    if-nez v0, :cond_9""",
+        """    invoke-static {}, Lcom/sec/internal/ims/util/IMSLog;->isEngMode()Z
+
+    const/4 v0, 0x0
+
+    if-nez v0, :cond_9""",
+    ),
+    (
+        'com/sec/internal/ims/imsservice/SimManager.smali',
+        ':not_available',
+        """    iget-object v0, p0, Lcom/sec/internal/ims/imsservice/SimManager;->mSimState:Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;
+
+    sget-object v1, Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;->LOADED:Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0""",
+        """    iget-object v0, p0, Lcom/sec/internal/ims/imsservice/SimManager;->mSimState:Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;
+
+    sget-object v1, Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;->LOADED:Lcom/sec/internal/ims/imsservice/SimManager$SIM_STATE;
+
+    if-ne v0, v1, :not_available
+
+    invoke-virtual {p0}, Lcom/sec/internal/ims/imsservice/SimManager;->hasIsim()Z
+
+    move-result v0
+
+    if-eqz v0, :is_available
+
+    iget-boolean v0, p0, Lcom/sec/internal/ims/imsservice/SimManager;->mIsimLoaded:Z
+
+    if-eqz v0, :not_available
+
+    :is_available
+    const/4 v0, 0x1
+
+    return v0
+
+    :not_available
+    const/4 v0, 0x0
+
+    return v0""",
     ),
 ]
 
