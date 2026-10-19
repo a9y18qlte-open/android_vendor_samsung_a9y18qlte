@@ -48,6 +48,11 @@ data call reported it with prefix length 0. Tethering takes such an address as
 tethering failed while Wi-Fi Calling was up. A tunnel address without a netmask
 is a host address: IWlanLinkProperties.getIpv4prefixlen() answers 0 as 32.
 
+When an ePDG connection fails or disconnects before bringUp succeeds,
+EpdgInterface.getApnConnStatusData() is null. TelephonyAdapter.updateApnConnStatus()
+calls data.getLinkProp(), crashing with a NullPointerException in convertDataCallResponse.
+Fall back to the failure ApnConnStatusData passed as the method parameter.
+
 Build the compat smali with compat/build.sh and baksmali its classes.dex.
 """
 
@@ -128,6 +133,21 @@ PATCHES = [
         r'    move-result-object v2\n)(?=(?:(?!:cond_0)[\s\S])*:cond_0\n)',
         r'''\1
     if-eqz v2, :cond_0
+''',
+    ),
+    (
+        'com/sec/epdg/interfaceController/EpdgInterfaceController.smali',
+        '.method public updateConnectionStatus(ILcom/sec/epdg/EpdgCommands$ApnConnStatusData;)V',
+        r'(\.line 120\n\s*\.restart local v1[^\n]*\n'
+        r'\s*invoke-virtual \{v0\}, Lcom/sec/epdg/interfaceController/EpdgInterface;->'
+        r'getApnConnStatusData\(\)Lcom/sec/epdg/EpdgCommands\$ApnConnStatusData;\n\n'
+        r'\s*move-result-object v2\n)',
+        r'''\1
+    if-nez v2, :conn_data_ok
+
+    move-object v2, p2
+
+    :conn_data_ok
 ''',
     ),
     (
