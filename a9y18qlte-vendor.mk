@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/a9y18qlte
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/samsung/a9y18qlte/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/samsung/a9y18qlte/proprietary/system/etc/epdg_apns_conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/epdg_apns_conf.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/eris.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/eris.conf \
     vendor/samsung/a9y18qlte/proprietary/system/etc/firmware/nvm_tlv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv.bin \
     vendor/samsung/a9y18qlte/proprietary/system/etc/firmware/nvm_tlv_1.3.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_1.3.bin \
@@ -29,14 +25,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
-    vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/embms.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/epdgmanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/epdgmanager_library.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/imsmanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/imsmanager_library.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/privapp-permissions-com.sec.epdg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.epdg.xml \
-    vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/privapp-permissions-com.sec.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.ims.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/privapp-permissions-com.sec.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.imsservice.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/rcsopenapi_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/rcsopenapi_library.xml \
@@ -205,25 +199,13 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
     fm_helium \
     libFileMux \
-    libfactoryutil \
-    libfloatingfeature \
     libfm-hci \
-    libmdf \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
-    libomission_avoidance \
-    libpacm_client \
     libsdm-disp-apis \
-    libsecaudiocoreutils \
-    libsecaudioeventutils \
-    libsecnativefeature \
-    libsecril-client \
-    libsecure_storage \
-    libsemnativecarrierfeature \
     vendor.qti.hardware.fm@1.0 \
-    vendor.samsung.hardware.security.securestorage@3.0 \
     libAudioFWInterface \
     libAudioTranscoder \
     libPSI \
@@ -239,15 +221,17 @@ PRODUCT_PACKAGES += \
     liberis_simaka \
     liberis_strongswan \
     libevs_float \
+    libfloatingfeature \
     liblocationservice_jni \
     libmediarelayengine \
-    libnativecfms \
     libresampler_ims \
     librtp \
     librtppayload \
     libsamsung_videoengine_9_0 \
     libsavscmn \
     libsec-ims \
+    libsecnativefeature \
+    libsecril-client \
     libstrongswan \
     libsvejni \
     libsveservice \
@@ -256,7 +240,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.bridge@2.0 \
     com.qualcomm.qti.ant@1.0_vendor \
     com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.uceservice@2.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -933,17 +916,10 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
     libsns_low_lat_stream_skel \
-    com.qualcomm.qti.imscmservice@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    libdiag_system \
-    ImsSettings \
     sveservice \
     EpdgService \
     HotwordEnrollmentOKGoogleExTL3210 \
     HotwordEnrollmentXGoogleExTL3210 \
-    ImsTelephonyService \
     imsservice \
     TimeService \
     EpdgManager \
@@ -958,9 +934,6 @@ PRODUCT_PACKAGES += \
     tcmclient \
     vsimmanager \
     com.qti.dpmframework \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
     dpmapi \
     privapp-permissions-qti.xml \
     qti_whitelist.xml \
