@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/svemanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/svemanager_library.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/vsimservice_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vsimservice_library.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/strongswan.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/strongswan.conf \
-    vendor/samsung/a9y18qlte/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Bluetooth_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/General_cal.acdb \
@@ -109,10 +108,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.trustonic.tee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.0-service.rc \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.teeregistry@1.0-service.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/init/wsm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wsm-service.rc \
@@ -281,11 +277,9 @@ PRODUCT_PACKAGES += \
     libCB \
     libDLInterface.camera.samsung \
     libFlacSwDec \
-    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libI420colorconvert \
-    libMcClient \
     libOpenCL \
     libOpenCv.camera.samsung \
     libQSEEComAPI \
@@ -491,9 +485,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtinyxml2_1 \
     libtzdrmgenprov \
-    libucm_tlc_comm \
-    libucm_tlc_direct_comm \
-    libucm_tlc_tz_esecomm \
     libuniplugin \
     libvdis_core \
     libvdis_interface \
@@ -539,8 +530,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.channel@2.0 \
     vendor.samsung.hardware.security.proca@2.0 \
     vendor.samsung.hardware.security.securestorage@3.0_vendor \
-    vendor.samsung.hardware.tlc.ucm@1.0-impl \
-    vendor.samsung.hardware.tlc.ucm@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     audio.primary.sdm660_vendor \
     sound_trigger.primary.sdm660 \
@@ -901,19 +890,15 @@ PRODUCT_PACKAGES += \
     libnlnetmgr \
     libpn553_fw \
     libthermalioctl \
-    libucsengine \
     libwsmd_functions \
     vendor.qti.gnss@3.0-service \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.samsung.frameworks.security.dsms@1.0_vendor \
-    vendor.samsung.frameworks.security.ucm.crypto@1.0 \
     vendor.samsung.hardware.health@1.0 \
     vendor.samsung.hardware.miscpower@2.0 \
     vendor.samsung.hardware.wifi.hostapd@2.0 \
     vendor.samsung.hardware.wifi.supplicant@2.0 \
     vendor.samsung.hardware.wifi@2.0 \
-    vendor.trustonic.tee@1.0 \
-    vendor.trustonic.teeregistry@1.0 \
     libFastRPC_AUE_Forward_skel \
     libFastRPC_UTF_Forward_800h_skel \
     libFastRPC_UTF_Forward_Qtc2_skel \
@@ -989,15 +974,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.samsung.hardware.miscpower@2.0-service \
-    vendor.samsung.hardware.tlc.ucm@1.0-service \
     vendor.samsung.hardware.wifi@2.0-service \
-    vendor.trustonic.tee@1.0-service \
-    vendor.trustonic.teeregistry@1.0-service \
     ipacm-diag \
     irsc_util \
     loc_launcher \
     lowi-server \
-    mcDriverDaemon \
     mm-qcamera-daemon \
     netmgrd \
     pd-mapper \
@@ -1011,7 +992,6 @@ PRODUCT_PACKAGES += \
     ssr_diag \
     ssr_setup \
     subsystem_ramdump \
-    tbaseLoader \
     tftp_server \
     thermal-engine \
     time_daemon \
