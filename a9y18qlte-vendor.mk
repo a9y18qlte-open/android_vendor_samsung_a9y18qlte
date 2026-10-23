@@ -291,8 +291,6 @@ PRODUCT_PACKAGES += \
     libaudioparsers \
     libbase64 \
     libbatching \
-    libbauthserver \
-    libbauthtzcommon \
     libbt-hidlclient \
     libc2d30_bltlib \
     libcdsp_default_listener \
@@ -307,7 +305,6 @@ PRODUCT_PACKAGES += \
     libdrmtime \
     libdsi_netctrl \
     libdsutils \
-    libegis_fp_normal_sensor_test \
     libfastcrc \
     libfastcvadsp_stub \
     libfastcvopt \
@@ -319,7 +316,6 @@ PRODUCT_PACKAGES += \
     libgcs \
     libgdtap \
     libgeofencing \
-    libgf_in_system_lib \
     libgnss \
     libgnsspps \
     libgps.utils \
@@ -388,7 +384,6 @@ PRODUCT_PACKAGES += \
     libqdi \
     libqdma_file_agent \
     libqdp \
-    libqfp_sensortest \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -472,7 +467,6 @@ PRODUCT_PACKAGES += \
     libsubsystem_control \
     libswldc_capture_core.camera.samsung \
     libsxqk \
-    libsynaFpSensorTestNwd \
     libsynergy_loc_api \
     libsystem_health_mon \
     libthermalclient \
@@ -880,7 +874,10 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     vendor.qti.hardware.audiohalext@1.0 \
+    libbauthserver \
+    libbauthtzcommon \
     libdsms_vendor \
+    libegis_fp_normal_sensor_test \
     libhal.wsm.samsung \
     libnlnetmgr \
     libpn553_fw \
