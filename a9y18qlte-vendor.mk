@@ -434,7 +434,6 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsec_semRil \
     libsecaudiocoreutils_vendor \
-    libsecaudioinfo \
     libsecnativefeature_vendor \
     libsecure_storage_vendor \
     libsecureui \
@@ -530,7 +529,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.proca@2.0 \
     vendor.samsung.hardware.security.securestorage@3.0_vendor \
     com.qualcomm.qti.bluetooth_audio@1.0 \
-    audio.primary.sdm660_vendor \
     sound_trigger.primary.sdm660 \
     libHMT \
     lib_SamsungRec_06005 \
@@ -543,8 +541,6 @@ PRODUCT_PACKAGES += \
     libadpcmdec \
     libadsp_hvx_callback_skel \
     libadsp_hvx_stub \
-    libaudio_log_utils \
-    libaudio_soundtrigger \
     libchromatix_imx576_d24qs_3rd_preview_high_cpp \
     libchromatix_imx576_d24qs_60_preview_3a \
     libchromatix_imx576_d24qs_60_video_3a \
@@ -867,8 +863,6 @@ PRODUCT_PACKAGES += \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
-    librecordalive \
-    libsamsungVoipResampler \
     libseemore \
     libstagefright_bufferqueue_helper_vendor \
     libstagefright_soft_g711dec_vendor \
@@ -880,7 +874,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal \
     libwvhidl \
     libwvdrmengine \
-    vendor.qti.hardware.audiohalext@1.0 \
     libbauthserver \
     libbauthtzcommon \
     libdsms_vendor \
