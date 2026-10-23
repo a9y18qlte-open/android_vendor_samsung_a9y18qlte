@@ -902,12 +902,8 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     vendor.qti.hardware.audiohalext@1.0 \
-    gatekeeper.mdfpp \
-    keystore.mdfpp \
     libdsms_vendor \
     libhal.wsm.samsung \
-    libkeymaster2_mdfpp \
-    libkeymaster_helper_vendor \
     libnlnetmgr \
     libpn553_fw \
     libthermalioctl \

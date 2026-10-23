@@ -24701,62 +24701,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "gatekeeper.mdfpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so",
-            ],
-            shared_libs: [
-                "libQSEEComAPI",
-                "liblog",
-                "libcrypto-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "keystore.mdfpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/keystore.mdfpp.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libkeymaster_helper_vendor",
-                "libkeymaster2_mdfpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdsms_vendor",
     owner: "samsung",
     strip: {
@@ -24805,61 +24749,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymaster2_mdfpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster2_mdfpp.so",
-            ],
-            shared_libs: [
-                "libcrypto-v33",
-                "liblog",
-                "libkeymaster_helper_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymaster_helper_vendor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster_helper_vendor.so",
-            ],
-            shared_libs: [
-                "libQSEEComAPI",
-                "liblog",
-                "libcutils",
-                "libcrypto-v33",
                 "libc++",
                 "libc",
                 "libm",
