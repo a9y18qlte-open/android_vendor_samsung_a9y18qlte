@@ -264,7 +264,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.0-impl-qti \
     android.hardware.sensors@1.0-impl \
-    audio.sec_primary.default \
     com.qualcomm.qti.ant@1.0-impl \
     power.qcom \
     vendor.qti.gnss@3.0-impl \
