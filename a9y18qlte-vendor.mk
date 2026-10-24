@@ -842,6 +842,8 @@ PRODUCT_PACKAGES += \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
+    librecordalive \
+    libsecaudioinfo \
     libseemore \
     libstagefright_bufferqueue_helper_vendor \
     libstagefright_soft_g711dec_vendor \
