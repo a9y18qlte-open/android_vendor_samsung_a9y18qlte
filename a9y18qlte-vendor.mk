@@ -45,6 +45,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Hdmi_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Headset_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Speaker_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Bluetooth_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/General_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Global_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Handset_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Hdmi_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Headset_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/KOR/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/KOR/Speaker_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Bluetooth_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/General_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Global_cal.acdb \
