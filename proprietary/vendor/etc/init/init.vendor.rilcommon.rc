@@ -13,6 +13,7 @@ on post-fs-data
 on property:ro.vendor.multisim.simslotcount=1
     stop ril-daemon1
 
+
 service secril_config /vendor/bin/secril_config_svc
     user radio
     group radio
