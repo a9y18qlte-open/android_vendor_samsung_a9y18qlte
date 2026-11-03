@@ -38,6 +38,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/system/etc/permissions/vsimservice_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vsimservice_library.xml \
     vendor/samsung/a9y18qlte/proprietary/system/etc/strongswan.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/strongswan.conf \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Bluetooth_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/General_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Global_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Handset_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Hdmi_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Headset_cal.acdb \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/CHN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHN/Speaker_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Bluetooth_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/General_cal.acdb \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audconf/ODM/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Global_cal.acdb \
@@ -151,10 +158,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a508_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a508_zap.b02 \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a508_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a508_zap.elf \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a508_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a508_zap.mdt \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a512_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a512_zap.b00 \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a512_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a512_zap.b01 \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a512_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a512_zap.b02 \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a512_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a512_zap.mdt \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
@@ -180,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/dbmd4_va_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd4_va_fw.bin \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
-    vendor/samsung/a9y18qlte/proprietary/vendor/firmware/msadp:$(TARGET_COPY_OUT_VENDOR)/firmware/msadp \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/a9y18qlte/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
