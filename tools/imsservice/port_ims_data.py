@@ -26,6 +26,9 @@ carrier are added to a copy of Mno.smali in <out dir>/smali.
   dropped: one unknown type makes the old loader discard the whole profile.
 - IPsec auth_algo/enc_algo lists become the single keywords the old stack takes.
 - mnomap.json's @BLOCKGC flags are dropped from carrier names.
+- providersettings.json becomes serviceprovidersettings.json, the old name of
+  the entitlement settings, with the old key names; carriers with their own
+  entitlement server are left out, the old code only has the default one.
 - dmconfig.xml and userconfiguration.xml are copied: the old code reads the
   same dmconfig indexes and userconfiguration attributes.
 """
@@ -57,6 +60,13 @@ RENAMED_KEYS = {
     'simmobility_allowlist': 'simmobility_whitelist',
     'simmobility_blocklist': 'simmobility_blacklist',
 }
+
+# providersettings.json keys -> the old serviceprovidersettings.json ones.
+SPS_RENAMED_KEYS = {
+    'notif_senderid': 'aes_push_senderid',
+    'ps_data_off_exempt': 'aes_ps_data_off',
+}
+SPS_SERVICES = {'smsip': 'smsoip'}
 
 MNO = 'Lcom/sec/internal/ims/util/Mno;'
 MNO_SMALI = 'smali/com/sec/internal/ims/util/Mno.smali'
@@ -317,6 +327,30 @@ def main(old_dir, new_dir, out_dir):
                os.path.join(out_raw, 'localconfig.json'))
     write_json(strip(raw(new_dir, 'rcspolicy.json'), old_types('rcspolicy.json'), strings),
                os.path.join(out_raw, 'rcspolicy.json'))
+
+    # providersettings.json -> serviceprovidersettings.json, the older name and
+    # keys of the same entitlement (AEC) settings. The old code only asks the
+    # default 3GPP server (aes.mnc<MNC>.mcc<MCC>.pub.3gppnetwork.org), so
+    # carriers with their own server are left out: entitlement would be
+    # required and could never succeed, blocking VoLTE/VoWiFi.
+    sps = []
+    known_lower = {m.lower() for m in known}  # looked up lowercased (Orange_fr)
+    for e in raw(new_dir, 'providersettings.json')['ProviderSettings']:
+        if mno_of(e).lower() not in known_lower or 'entitlement_domain' in e \
+                or 'entitlement_domain_from_impi' in e:
+            continue
+        o = {}
+        for k, v in e.items():
+            if k == 'services':
+                for s in v.split(','):
+                    o['entitlement_for_' + SPS_SERVICES.get(s.strip(), s.strip())] = 'true'
+            else:
+                k = SPS_RENAMED_KEYS.get(k, k)
+                if k in strings:
+                    o[k] = v
+        sps.append(o)
+    write_json({'ServiceProviderSettings': sps},
+               os.path.join(out_raw, 'serviceprovidersettings.json'))
 
     for name in ('dmconfig.xml', 'userconfiguration.xml'):
         shutil.copyfile(os.path.join(new_dir, 'res/xml', name), os.path.join(out_xml, name))
