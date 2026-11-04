@@ -50,9 +50,12 @@ OLD_NETWORK_TYPES = {
 # code only the old one, so the value is written under the old name.
 RENAMED_KEYS = {
     'ss_need_separate_CFA': 'ss_need_seperate_CFA',
+    'ss_need_separate_CFNL': 'ss_need_seperate_CFNL',
     'ss_need_separate_CFNRy': 'ss_need_seperate_CFNRy',
     'ss_support_ss_namespace': 'ss_support_ss_element',
     'h265_hd720p_payload': 'h265_hd720_payload',
+    'simmobility_allowlist': 'simmobility_whitelist',
+    'simmobility_blocklist': 'simmobility_blacklist',
 }
 
 MNO = 'Lcom/sec/internal/ims/util/Mno;'
