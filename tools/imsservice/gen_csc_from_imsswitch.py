@@ -16,8 +16,11 @@ switches do not depend on the phone's own CSC on /odm.
 - VoLTE on. The voice domain preference on LTE is left out, so imsservice
   takes it from globalsettings.json like newer releases do; they no longer read
   it from the CSC.
-- VoWiFi on where the table has enableServiceVowifi. Video calls and SMS over
-  IMS stay off: untested on this device.
+- VoWiFi on where the table has enableServiceVowifi, SMS over IMS where it has
+  enableServiceSmsip. With SMS over IMS off, imsservice stops its SMS module at
+  the first switch update, although the IMS profile still registers smsip: the
+  network keeps delivering SMS over IMS, they are never acknowledged and it
+  sends each again. Video calls stay off: untested on this device.
 - Voice/SS/USSD/emergency domains are left out, so imsservice uses its own
   per-carrier globalsettings.json values.
 
@@ -62,12 +65,15 @@ def main(switch_path, mnomap_path, smali_path, output, carrier_config=None, epdg
     known = known_mnos(smali_path)
     volte = set()
     vowifi = set()
+    smsip = set()
     for e in load(switch_path)['imsswitch']:
         name = e['mnoname']
         if name in known and e.get('enableIms') and e.get('enableServiceVolte'):
             volte.add(name)
             if e.get('enableServiceVowifi'):
                 vowifi.add(name)
+            if e.get('enableServiceSmsip'):
+                smsip.add(name)
 
     plmns = {}
     for m in load(mnomap_path)['mnomap']:
@@ -93,7 +99,7 @@ def main(switch_path, mnomap_path, smali_path, output, carrier_config=None, epdg
         ET.SubElement(s, 'EnableVoLTEindicator').text = 'true'
         ET.SubElement(s, 'EnableVoiceoverWIFI').text = 'true' if mno in vowifi else 'false'
         ET.SubElement(s, 'EnableVideocall').text = 'false'
-        ET.SubElement(s, 'EnableSMSoverIP').text = 'false'
+        ET.SubElement(s, 'EnableSMSoverIP').text = 'true' if mno in smsip else 'false'
 
     ET.indent(root)
     with open(output, 'wb') as f:
