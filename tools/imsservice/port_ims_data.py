@@ -46,6 +46,15 @@ OLD_NETWORK_TYPES = {
     'tdscdma', 'wifi', 'all',
 }
 
+# Keys the newer release renamed: its code reads only the new name, the old
+# code only the old one, so the value is written under the old name.
+RENAMED_KEYS = {
+    'ss_need_separate_CFA': 'ss_need_seperate_CFA',
+    'ss_need_separate_CFNRy': 'ss_need_seperate_CFNRy',
+    'ss_support_ss_namespace': 'ss_support_ss_element',
+    'h265_hd720p_payload': 'h265_hd720_payload',
+}
+
 MNO = 'Lcom/sec/internal/ims/util/Mno;'
 MNO_SMALI = 'smali/com/sec/internal/ims/util/Mno.smali'
 
@@ -109,6 +118,7 @@ def strip(obj, old_types, strings, path='', flat=False, keep_objects=()):
         return obj
     out = {}
     for k, v in obj.items():
+        k = RENAMED_KEYS.get(k, k)
         p = path + '/' + k
         if strings is not None and not read_by_code(k, strings):
             continue
