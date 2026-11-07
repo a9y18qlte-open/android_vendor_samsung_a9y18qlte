@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 """Port a newer Samsung release's epdg_apns_conf.xml to this device's EpdgService.
 
 Usage: port_epdg_apns_conf.py <stock> <newer> <EpdgService apktool dir> <output>

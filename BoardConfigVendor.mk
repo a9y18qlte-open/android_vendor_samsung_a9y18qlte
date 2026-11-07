@@ -1,3 +1,4 @@
 #
-# Automatically generated file. DO NOT MODIFY
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
 #

@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 """Port a newer Samsung imsservice's carrier data into this device's older one.
 
 Usage: port_ims_data.py <old apktool dir> <new apktool dir> <out dir>
