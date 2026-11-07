@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 """Generate SamsungImsHelper's XCAP APN table from Samsung CSC customer.xml files.
 
 Usage: gen_xcap_apns.py <out xcap_apns.xml> <customer.xml>...

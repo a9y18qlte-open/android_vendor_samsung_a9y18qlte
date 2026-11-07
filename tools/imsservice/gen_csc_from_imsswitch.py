@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
 """Generate a CSC customer.xml for com.sec.imsservice from Samsung's switch table.
 
 Usage: gen_csc_from_imsswitch.py <imsswitch.json> <mnomap.json> <Mno.smali> <output>
