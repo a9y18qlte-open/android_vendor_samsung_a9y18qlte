@@ -459,34 +459,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libAudioFWInterface",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libAudioFWInterface.so",
-            ],
-            shared_libs: [
-                "libsve_shim",
-                "liblog",
-                "libaudioclient",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libAudioTranscoder",
     owner: "samsung",
     strip: {

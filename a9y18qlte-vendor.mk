@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder \
     libsdm-disp-apis \
     vendor.qti.hardware.fm@1.0 \
-    libAudioFWInterface \
     libAudioTranscoder \
     libPSI \
     libRecorder \
