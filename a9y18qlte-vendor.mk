@@ -80,7 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audio/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/playback_record_audio_policy_configuration.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/audio_policy_configuration_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_sec.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes_sec.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/camera/A08QL_s5k4hayx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/A08QL_s5k4hayx_module_info.xml \
