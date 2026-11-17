@@ -141,7 +141,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/snap_gpu_kernel_32.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_32.bin \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/snap_gpu_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_64.bin \
-    vendor/samsung/a9y18qlte/proprietary/vendor/etc/somxreg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/somxreg.conf \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/wlan_common_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_common_rc \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/wlan_vendor_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_vendor_rc \
@@ -259,7 +258,6 @@ PRODUCT_PACKAGES += \
     libadiertac \
     libadreno_utils \
     libadsprpc \
-    libarac \
     libaudcal \
     libaudioalsa \
     libaudioparsers \
@@ -300,32 +298,10 @@ PRODUCT_PACKAGES += \
     librs_adreno \
     librs_adreno_sha1 \
     libsaiv_BeautySolutionVideo \
-    libsavsac \
-    libsavscmn_vendor \
-    libsavsvc \
     libsecaudiocoreutils_vendor \
     libsecnativefeature_vendor \
     libsensorndkbridge \
-    libsomx263dsw \
-    libsomx264dsw \
-    libsomxaacd \
-    libsomxadpcmd \
-    libsomxamrd \
-    libsomxcmn \
-    libsomxcore_vendor \
-    libsomxflacd \
-    libsomxhevcdsw \
-    libsomxmp3d \
-    libsomxmp43d \
-    libsomxmp4vdsw \
-    libsomxnaace \
-    libsomxvc1dsw \
-    libsomxvp8d \
-    libsomxwmad \
-    libsomxwmv7d \
-    libsomxwmv8d \
     libswldc_capture_core.camera.samsung \
-    libsxqk \
     libthermalclient \
     libuniplugin \
     libvdis_core \
