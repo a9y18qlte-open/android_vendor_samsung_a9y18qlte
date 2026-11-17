@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
     librs_adreno \
     libsaiv_BeautySolutionVideo \
     libsecaudiocoreutils_vendor \
+    libsecaudioinfo \
     libsecnativefeature_vendor \
     libsensorndkbridge \
     libswldc_capture_core.camera.samsung \
@@ -634,7 +635,6 @@ PRODUCT_PACKAGES += \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
     librecordalive \
-    libsecaudioinfo \
     libseemore \
     libstagefright_bufferqueue_helper_vendor \
     libstagefright_soft_g711dec_vendor \
