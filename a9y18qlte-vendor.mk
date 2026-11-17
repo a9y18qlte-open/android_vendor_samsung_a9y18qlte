@@ -328,9 +328,6 @@ PRODUCT_PACKAGES += \
     libxcv.camera.samsung \
     libasphere \
     libswdap \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.soter@1.0 \
-    vendor.qti.latency@2.0 \
     libHMT \
     lib_SamsungRec_06005 \
     libactuator_dw9808 \
