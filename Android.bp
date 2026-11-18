@@ -19254,7 +19254,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.wifi.hostapd@1.0",
-                "android.hardware.wifi.hostapd@1.1",
                 "android.hardware.wifi.supplicant@1.0",
                 "libhidlbase",
                 "libhidltransport",
