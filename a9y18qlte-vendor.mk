@@ -295,7 +295,6 @@ PRODUCT_PACKAGES += \
     libsecaudiocoreutils_vendor \
     libsecaudioinfo \
     libsecnativefeature_vendor \
-    libsensorndkbridge \
     libswldc_capture_core.camera.samsung \
     libthermalclient \
     libuniplugin \
