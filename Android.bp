@@ -3999,6 +3999,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libvdis_core.so",
             ],
             shared_libs: [
+                "libshim_vdis_ion",
                 "libshim_sensorndkbridge",
                 "libutils",
                 "libui",
@@ -4018,6 +4019,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libvdis_core.so",
             ],
             shared_libs: [
+                "libshim_vdis_ion",
                 "libshim_sensorndkbridge",
                 "libutils",
                 "libui",
@@ -4034,6 +4036,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
