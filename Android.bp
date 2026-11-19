@@ -1069,6 +1069,7 @@ cc_prebuilt_library_shared {
                 "libmediarelayengine",
                 "libmedia",
                 "libaudioclient",
+                "libaudiobase",
                 "libcurl2",
                 "libc++",
                 "libc",
