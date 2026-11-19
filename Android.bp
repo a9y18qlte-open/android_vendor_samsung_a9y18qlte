@@ -19244,6 +19244,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.wifi.hostapd@2.0",
     owner: "samsung",
+    check_elf_files: false,
     strip: {
         none: true,
     },
