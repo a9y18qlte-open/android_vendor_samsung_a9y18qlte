@@ -95,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/camera/s5k5e9yx_s05ql_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9yx_s05ql_chromatix.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/samsung/a9y18qlte/proprietary/vendor/etc/dolby/ac4_tables.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/ac4_tables.bin \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/a9y18qlte/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
@@ -637,6 +638,7 @@ PRODUCT_PACKAGES += \
     librecordalive \
     libseemore \
     libstagefright_bufferqueue_helper_vendor \
+    libstagefright_soft_ac4dec_dolby \
     libstagefright_soft_ddpdec \
     libstagefright_soft_g711dec_vendor \
     libstagefright_soft_rawdec_vendor \
