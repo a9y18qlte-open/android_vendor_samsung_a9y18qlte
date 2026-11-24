@@ -13534,35 +13534,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_softomx_plugin_vendor",
-    stem: "libstagefright_softomx_plugin",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_softomx_plugin.so",
-            ],
-            shared_libs: [
-                "libstagefright_softomx",
-                "libstagefright_foundation",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsysmon_cdsp_skel",
     owner: "samsung",
     strip: {

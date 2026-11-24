@@ -643,7 +643,6 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_g711dec_vendor \
     libstagefright_soft_rawdec_vendor \
     libstagefright_soft_vorbisdec_vendor \
-    libstagefright_softomx_plugin_vendor \
     libsysmon_cdsp_skel \
     libvqzip \
     libwifi-hal \
