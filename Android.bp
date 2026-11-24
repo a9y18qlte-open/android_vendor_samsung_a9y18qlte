@@ -13379,6 +13379,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstagefright_soft_ac4dec_dolby",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libstagefright_soft_ac4dec_dolby.so",
+            ],
+            shared_libs: [
+                "libstagefright_omx",
+                "libstagefright_softomx",
+                "libstagefright_foundation",
+                "libmedia_omx",
+                "libdeccfg",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libprofileparamstorage",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstagefright_soft_ddpdec",
     owner: "samsung",
     strip: {
