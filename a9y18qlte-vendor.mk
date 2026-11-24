@@ -490,6 +490,7 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k5e9yx_s05ql_zsl_preview_3a \
     libchromatix_s5k5e9yx_s05ql_zsl_video_3a \
     libcppf \
+    libdeccfg \
     libdepthmapwrapper \
     libdsd2pcm \
     libdualcam_refocus \
@@ -636,9 +637,11 @@ PRODUCT_PACKAGES += \
     librecordalive \
     libseemore \
     libstagefright_bufferqueue_helper_vendor \
+    libstagefright_soft_ddpdec \
     libstagefright_soft_g711dec_vendor \
     libstagefright_soft_rawdec_vendor \
     libstagefright_soft_vorbisdec_vendor \
+    libstagefright_softomx_plugin_vendor \
     libsysmon_cdsp_skel \
     libvqzip \
     libwifi-hal \
