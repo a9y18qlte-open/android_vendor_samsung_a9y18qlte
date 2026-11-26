@@ -637,9 +637,6 @@ PRODUCT_PACKAGES += \
     libstagefright_bufferqueue_helper_vendor \
     libstagefright_soft_ac4dec_dolby \
     libstagefright_soft_ddpdec \
-    libstagefright_soft_g711dec_vendor \
-    libstagefright_soft_rawdec_vendor \
-    libstagefright_soft_vorbisdec_vendor \
     libsysmon_cdsp_skel \
     libvqzip \
     libwifi-hal \
@@ -658,7 +655,6 @@ PRODUCT_PACKAGES += \
     libAlacSwDec \
     libApeSwDec \
     libDLInterface.camera.samsung \
-    libFlacSwDec \
     libGPreqcancel \
     libGPreqcancel_svc \
     libI420colorconvert \
@@ -789,7 +785,6 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libspictrl \
     libssd \
-    libstagefright_soft_qtiflacdec \
     libstreamparser \
     libsubsystem_control \
     libsynergy_loc_api \
